@@ -128,7 +128,7 @@ pre_install_docker_compose(){
     echo
      # Set sspanel node_id
     echo "DNS "
-    read -p "(Default value: localhost ):" LDNS
+    read -p "(默认DNS: 8.8.8.8 ):" LDNS
     [ -z "${LDNS}" ] && LDNS="8.8.8.8"
     echo
     echo "---------------------------"
@@ -138,7 +138,7 @@ pre_install_docker_compose(){
 
     # Set caddy cloudflare ddns email
     echo "你CF的邮箱账号"
-    read -p "(Default hulisang@test.com):" cloudflare_email
+    read -p "(你在CF网站注册的邮箱):" cloudflare_email
     [ -z "${cloudflare_email}" ]  && cloudflare_email="hulisang@test.com"
     echo
     echo "---------------------------"
@@ -148,7 +148,7 @@ pre_install_docker_compose(){
 
     # Set caddy cloudflare ddns key
     echo "你CF的KEY密钥"
-    read -p "(填入cf秘钥： ):" cloudflare_key
+    read -p "(填入cf秘钥):" cloudflare_key
     [ -z "${cloudflare_key}" ] && cloudflare_key="bbbbbbbbbbbbbbbbbb"
     echo
     echo "---------------------------"
