@@ -9,10 +9,11 @@ bash install.sh
 使用教程请看wiki
 
 既然破解版都泛滥了我也放出来吧，此版本有审计和数据库对接
+已经基本汉化 支持审计
 
 mkdir v2ray-agent &&
 cd v2ray-agent &&
-curl https://raw.githubusercontent.com/hulisang/SSPanel-UIM-v2plugin/master/install-dev.sh -o install.sh &&
+curl https://raw.githubusercontent.com/l182918648/SSPanel-UIM-v2plugin/master/install-dev.sh -o install.sh &&
 chmod +x install.sh &&
 bash install.sh
 
