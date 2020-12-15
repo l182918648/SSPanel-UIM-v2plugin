@@ -110,7 +110,7 @@ error_detect_depends(){
 # Pre-installation settings
 pre_install_docker_compose(){
     echo "请选择使用的面板 SSpanel 0， SSRpanel 1"
-    read -p "(v2ray_paneltype (Default 0):" v2ray_paneltype
+    read -p "(默认sspanel):" v2ray_paneltype
     [ -z "${v2ray_paneltype}" ] && v2ray_paneltype=0
     echo
     echo "---------------------------"
